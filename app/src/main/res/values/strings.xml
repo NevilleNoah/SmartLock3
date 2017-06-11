@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">SmartLock</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message">消息</string>
+    <string name="about">首页</string>
+    <string name="video">录像</string>
+    <string name="setting">设置</string>
+    <string name="login">登录</string>
+    <string name="password">请输入密码</string>
+    <string name="account">请输入账号</string>
+    <string name="SmartLock">校园智能云锁</string>
+    <string name="NoOfRoom">5号楼 612寝室</string>
+    <string name="toSOSText">一键呼救</string>
+    <string name="toScanQRText">扫码开锁</string>
+    <string name="toViewText">远程查看</string>
+    <string name="toRemindText">智能提醒</string>
+    <string name="toRestText">智能休眠</string>
+    <string name="toGrantText">灵活授权</string>
+    <string name="videoTime1">2017-6-8 17:00</string>
+    <string name="videoTime2">2017-6-7 16:00</string>
+    <string name="videoTime3">2017-6-6 15:00</string>
+    <string name="videoTime4">2017-6-5 14:00</string>
+    <string name="videoTime5">2016-6-4 13:00</string>
+    <string name="videoNoDisplay">不再显示</string>
+    <string name="user1">凌曦</string>
+    <string name="user2">倪颖鹤</string>
+    <string name="user3">李博</string>
+    <string name="user4">顾樟杰</string>
+    <string name="messageTime1">2017-4-11 19:44:33</string>
+    <string name="messageTime2">2017-4-11 18:33:22</string>
+    <string name="messageTime3">2017-4-10 18:21:18</string>
+    <string name="messageTime4">2017-4-10 6:32:18</string>
+    <string name="messageTime5">2017-4-10 4:32:18</string>
+    <string name="messageTime6">2017-4-9 14:35:19</string>
+    <string name="messageTime7">2017-4-9 15:35:19</string>
+    <string name="messageTime8">2017-4-8 9:34:19</string>
+    <string name="messageTime9">2017-4-8 10:35:7</string>
+    <string name="messageStatus1">未锁门</string>
+    <string name="messageStatus2">已锁门</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

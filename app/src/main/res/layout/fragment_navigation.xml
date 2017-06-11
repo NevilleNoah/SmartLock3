@@ -1,0 +1,126 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:background="@drawable/setting_border2"
+    tools:context="com.example.asus.smartlock.NavigationFragment">
+
+
+    <ImageView
+        android:id="@+id/aboutLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/videoLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/aboutText"
+        app:srcCompat="@drawable/about_logo" />
+
+    <ImageView
+        android:id="@+id/videoLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="5"
+        app:layout_constraintLeft_toRightOf="@+id/aboutLogo"
+        app:layout_constraintRight_toLeftOf="@+id/messageLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/videoText"
+        app:srcCompat="@drawable/video_logo" />
+
+    <ImageView
+        android:id="@+id/messageLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/messageText"
+        app:layout_constraintLeft_toRightOf="@+id/videoLogo"
+        app:layout_constraintRight_toLeftOf="@+id/settingLogo"
+        app:srcCompat="@drawable/message_logo" />
+
+    <ImageView
+        android:id="@+id/settingLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/messageLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/settingText"
+        app:srcCompat="@drawable/setting_logo" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/about"
+        android:textColor="#707070"
+        android:layout_marginBottom="8dp"
+        android:textSize="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/videoText"
+        app:layout_constraintTop_toBottomOf="@+id/aboutLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/videoText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/video"
+        android:textColor="#707070"
+        android:textSize="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/aboutText"
+        app:layout_constraintRight_toLeftOf="@+id/messageText"
+        app:layout_constraintTop_toBottomOf="@+id/videoLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/message"
+        android:textColor="#707070"
+        android:textSize="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/videoText"
+        app:layout_constraintRight_toLeftOf="@+id/settingText"
+        app:layout_constraintTop_toBottomOf="@+id/messageLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/settingText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/setting"
+        android:textColor="#707070"
+        android:textSize="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/messageText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        />
+</android.support.constraint.ConstraintLayout>

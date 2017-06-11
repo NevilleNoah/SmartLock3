@@ -1,0 +1,233 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.smartlock.AboutFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1"
+        android:id="@+id/aboutHead"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/aboutBody"
+        android:background="#0cf"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <ImageView
+            android:id="@+id/aboutHeadBottom"
+            android:layout_width="0dp"
+            android:layout_height="71dp"
+            android:background="@drawable/wave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+        <TextView
+            android:id="@+id/NoOfRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NoOfRoom"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/aboutHeadBottom" />
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/lock"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="0.5"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/NoOfRoom" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutHead"
+        android:background="#fff"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/aboutBody">
+
+
+        <TextView
+            android:id="@+id/toGrantText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toGrantText"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/toViewText"
+            app:layout_constraintBottom_toBottomOf="@+id/toGrant"
+            app:layout_constraintRight_toRightOf="@+id/toGrant"
+            app:layout_constraintLeft_toLeftOf="@+id/toGrant"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/toRestText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toRestText"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/toScanQRText"
+            app:layout_constraintRight_toLeftOf="@+id/toGrant"
+            app:layout_constraintLeft_toLeftOf="@+id/toRest"
+            app:layout_constraintBottom_toBottomOf="@+id/toRest"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/toRemindText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toRemindText"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/toSOSText"
+            app:layout_constraintRight_toLeftOf="@+id/toRest"
+            app:layout_constraintLeft_toLeftOf="@+id/toRemind"
+            app:layout_constraintBottom_toBottomOf="@+id/toRemind"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/toViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toViewText"
+            android:textColor="#000"
+            app:layout_constraintLeft_toRightOf="@+id/toScanQR"
+            app:layout_constraintTop_toTopOf="@+id/toView"
+            app:layout_constraintRight_toRightOf="@+id/toView"
+            app:layout_constraintBottom_toTopOf="@+id/toGrant"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/toSOSText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toSOSText"
+            android:textColor="#000"
+            app:layout_constraintTop_toTopOf="@+id/toSOS"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/toRemind"
+            app:layout_constraintRight_toLeftOf="@+id/toScanQR"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/toScanQRText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toScanQRText"
+            android:textColor="#000"
+            app:layout_constraintRight_toRightOf="@+id/toScanQR"
+            app:layout_constraintLeft_toLeftOf="@+id/toScanQR"
+            app:layout_constraintBottom_toBottomOf="@+id/toScanQR"
+            app:layout_constraintTop_toTopOf="@+id/toScanQR"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/sos"
+            android:id="@+id/toSOS"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/toRemind"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/toScanQR"
+            android:padding="20dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/scan_qr"
+            android:id="@+id/toScanQR"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/toRest"
+            app:layout_constraintLeft_toRightOf="@+id/toSOS"
+            app:layout_constraintRight_toLeftOf="@+id/toView"
+            android:padding="20dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/view"
+            android:id="@+id/toView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/toGrant"
+            app:layout_constraintLeft_toRightOf="@+id/toScanQR"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="20dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/remind"
+            android:id="@+id/toRemind"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/toSOS"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/toRest"
+            android:padding="20dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/rest"
+            android:id="@+id/toRest"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/toScanQR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/toRemind"
+            app:layout_constraintRight_toLeftOf="@+id/toGrant"
+            android:padding="20dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/grant"
+            android:id="@+id/toGrant"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/toView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/toRest"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="20dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
