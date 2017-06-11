@@ -3,9 +3,11 @@ package com.example.asus.smartlock;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -41,6 +43,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         settingText=(TextView)findViewById(R.id.settingText);
         topTtile=(TextView)findViewById(R.id.topTitle);
 
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent home = new Intent(Intent.ACTION_MAIN);
+            home.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            home.addCategory(Intent.CATEGORY_HOME);
+            startActivity(home);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 
