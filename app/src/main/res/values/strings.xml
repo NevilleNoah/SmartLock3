@@ -39,6 +39,8 @@
     <string name="messageTime9">2017-4-8 10:35:7</string>
     <string name="messageStatus1">未锁门</string>
     <string name="messageStatus2">已锁门</string>
+    <string name="encode_qrcode">生成二维码</string>
+    <string name="dencode_qrcode">扫描二维码</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
